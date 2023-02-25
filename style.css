@@ -1,0 +1,237 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&display=swap');
+
+:root{
+    --c-brand: #663333;
+    --c-brand-rgb: 102,51,51;
+    --c-dark: #AC9B9B;
+    --c-body: #F6F2F1;
+    --f-main: "fira sans" , sans-serif;
+    --transition: all .6s cubic-bezier(.165, .84, .44, 1);
+    --shadow: 0px 15px 40px rgba(0,0,0,0.1);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    font-weight: 700;
+    color: black;
+    
+    }
+    
+    .a{
+        text-decoration: none;
+        color: var(--c-dark);
+        transition: var(--transition);
+    }
+
+
+
+body{
+    font-family: var(--f-main);
+    line-height: 1.7;
+}
+
+.section-padding{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+a{
+    color:black;
+}
+
+a:hover{
+    color: var(--c-brand);
+}
+
+/* btn */
+.btn {
+    border-radius: 6px;
+    padding: 14px 38px;
+    margin-left: 3px;
+}
+
+.btn-brand{
+    color: white;
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    font-weight: 500;
+    font-size: medium;
+}
+
+.btn-brand:hover {
+    background-color: #522222;
+    border-color: var(--c-brand);
+    color: #fff;
+}
+
+.bg-brand {
+    background-color:#EEE1D1;
+}
+
+/* slider */
+.slide-1 {
+    background: url(./images/hero\ 3\ png.png);
+    background-position:right center;
+    background-repeat: no-repeat;
+    background-size: 250px;    
+    }
+
+    .slide-2 {
+        background: url(./images/hero\ 2\ png.png);
+        background-position:right center;
+        background-repeat: no-repeat;
+        background-size: 230px;    
+        }
+
+
+ @media (max-width: 480px) {
+    .slide-1
+    {
+        background-position: bottom;
+        background-size: 160px;
+        padding-bottom: 200px;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .slide-2
+    {
+        background-position: bottom;
+        background-size: 150px;
+        padding-bottom: 200px;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+ }   
+
+
+img {
+    width: 100%;
+}
+
+/* about */
+ .divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: var(--c-brand);
+}
+
+.service-text{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#service-1{
+    background-image: url(./images/wedding.jpg);
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+color: #fff;
+}
+
+
+#service-2{
+    background-image: url(./images/casual.jpg);
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+color: #fff;
+}
+
+#service-3{
+    background-image: url(./images/african.jpg);
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+color: #fff;
+}
+
+#service-4{
+    background-image: url(./images/reception.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+color: #fff;
+}
+
+/* reviews */
+#review {
+    background-color: #EEE1D1;
+}
+
+.review img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.review .quote-icon {
+    font-size: 74px;
+    color: var(--c-brand);
+    line-height: 1;
+}
+
+#review .carousel-indicators {
+    margin-bottom: -3rem;
+}
+
+/* blog */
+.blog-post img{
+    width: 40%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .blog-post img {
+        width: 100%;
+    }
+    .blog-post {
+        flex-direction: column;
+    }
+}
+
+/* footer */
+footer {
+    background-color:var(--c-brand);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+footer img {
+    max-width: 175px;
+}
+
+footer .social-links a{
+    color: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+footer a:hover{
+    color: #fff;
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+.footer-bottom {
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255);
+}
+
+
